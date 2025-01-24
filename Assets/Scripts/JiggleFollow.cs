@@ -4,10 +4,10 @@ using UnityEngine;
 public class JiggleFollow : MonoBehaviour
 {
     [SerializeField][Tooltip("The transform this object will follow")] Transform target;
-    [SerializeField] float followSpeed = 10f;
-    [SerializeField] float damping = 0.8f;
-    [SerializeField] float torqueSpeed = 10f;
-    [SerializeField] float rotationDamping = 0.8f;
+    [SerializeField] float followSpeed = 30f;
+    [SerializeField] float damping = 6f;
+    [SerializeField] float torqueSpeed = 1f;
+    [SerializeField] float rotationDamping = 10f;
 
     private Vector3 velocity = Vector3.zero;
     private Quaternion angularVelocity = Quaternion.identity;
@@ -20,7 +20,7 @@ public class JiggleFollow : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (target && handGrabInteractable && handGrabInteractable.Interactors.Count == 0)        //only move if not grabbed and is grabbable
+        if (target && (!handGrabInteractable || handGrabInteractable.Interactors.Count == 0))        //only move if not grabbed and is grabbable
         {
             // Position physics with momentum
             Vector3 direction = target.position - transform.position;

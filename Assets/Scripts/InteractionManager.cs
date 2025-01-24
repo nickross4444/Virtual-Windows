@@ -57,7 +57,7 @@ public class InteractionManager : MonoBehaviour
         {
             originalScales[obj.transform] = obj.transform.localScale;
             obj.SetActive(false);
-            HandGrabInteractable interactable = obj.GetComponent<HandGrabInteractable>();
+            HandGrabInteractable interactable = obj.GetComponentInChildren<HandGrabInteractable>();
             if (interactable != null)
             {
                 // Subscribe to state changes to handle when object is grabbed

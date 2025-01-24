@@ -13,6 +13,7 @@ public class InteractionManager : MonoBehaviour
     [Header("Summonable Objects")]
     [SerializeField] private GameObject[] summonableObjects;  // Objects that can be summoned
     private List<GameObject> activeSummonableObjects = new List<GameObject>();  // Currently available objects
+    private Dictionary<GameObject, GameObject> jiggleTargets = new Dictionary<GameObject, GameObject>();  // Tracks jiggle follow targets
 
     [Header("Configuration")]
     [SerializeField] private float summonAngleThreshold = 30f;  // Palm angle to trigger summoning
@@ -102,8 +103,25 @@ public class InteractionManager : MonoBehaviour
         if (args.NewState == InteractableState.Select)
         {
             activeSummonableObjects.Remove(obj);
-            StopCoroutine(summonCoroutines[obj]);
+            if (summonCoroutines.ContainsKey(obj))
+            {
+                StopCoroutine(summonCoroutines[obj]);
+            }
             obj.transform.localScale = originalScales[obj.transform];
+
+            // When grabbed, remove the jiggle target
+            if (jiggleTargets.ContainsKey(obj))
+            {
+                var jiggleFollow = obj.GetComponent<JiggleFollow>();
+                if (jiggleFollow != null)
+                {
+                    jiggleFollow.SetTarget(null);
+                }
+                Destroy(jiggleTargets[obj]);
+                jiggleTargets.Remove(obj);
+            }
+            //Change to non-trigger collider
+            obj.GetComponentInChildren<Collider>().isTrigger = false;
         }
     }
 
@@ -127,14 +145,28 @@ public class InteractionManager : MonoBehaviour
 
             obj.SetActive(true);
             Vector3 startPos = hand.PalmPoint.position;
+            startPos.y += summonHeightOffset;
             // Start with smaller scale for pop-in effect
             obj.transform.localScale = originalScales[obj.transform] * initialScaleMultiplier;
+            obj.transform.position = startPos;
+            // Create jiggle target
+            GameObject jiggleTarget = new GameObject($"{obj.name}_JiggleTarget");
+            jiggleTarget.transform.position = startPos;
+            jiggleTargets[obj] = jiggleTarget;
+
+            // Set up jiggle follow
+            var jiggleFollow = obj.GetComponent<JiggleFollow>();
+            if (jiggleFollow == null)
+            {
+                jiggleFollow = obj.AddComponent<JiggleFollow>();
+            }
+            jiggleFollow.SetTarget(jiggleTarget.transform);
 
             // Position each object along the horizontal line with vertical offset
             float horizontalOffset = startOffset + (i * summonableObjectSpacing);
             Vector3 targetOffset = (Vector3.up * summonHeightOffset) + (rightVector * horizontalOffset);
 
-            summonCoroutines[obj] = StartCoroutine(AnimateSummon(obj.transform, startPos, hand.PalmPoint, targetOffset, toPlayer));
+            summonCoroutines[obj] = StartCoroutine(AnimateSummon(obj.transform, startPos, hand.PalmPoint, targetOffset, toPlayer, jiggleTarget.transform));
         }
     }
 
@@ -161,7 +193,7 @@ public class InteractionManager : MonoBehaviour
     }
 
     // Animate object appearance and maintain position relative to palm
-    private IEnumerator AnimateSummon(Transform objTransform, Vector3 startPos, Transform palmPoint, Vector3 targetOffset, Vector3 toPlayer)
+    private IEnumerator AnimateSummon(Transform objTransform, Vector3 startPos, Transform palmPoint, Vector3 targetOffset, Vector3 toPlayer, Transform jiggleTarget)
     {
         // Calculate object's position in the line for consistent spacing
         int objectIndex = System.Array.IndexOf(summonableObjects, objTransform.gameObject);
@@ -181,9 +213,11 @@ public class InteractionManager : MonoBehaviour
         {
             float t = elapsed / summonAnimationDuration;
             Vector3 currentOffset = Vector3.Lerp(Vector3.zero, targetOffset, t);
-
-            objTransform.position = palmPoint.position + currentOffset;
-            objTransform.rotation = Quaternion.Slerp(startRotation, endRotation, t);
+            if (jiggleTarget)
+            {
+                jiggleTarget.position = palmPoint.position + currentOffset;
+                jiggleTarget.rotation = Quaternion.Slerp(startRotation, endRotation, t);
+            }
             objTransform.localScale = Vector3.Lerp(originalScale * initialScaleMultiplier, originalScale, t);
 
             elapsed += Time.deltaTime;
@@ -205,9 +239,12 @@ public class InteractionManager : MonoBehaviour
             Vector3 horizontalPosition = currentRightVector * horizontalOffset;
             Vector3 verticalPosition = Vector3.up * summonHeightOffset;
 
-            // Update object position and rotation to follow hand
-            objTransform.position = palmPoint.position + horizontalPosition + verticalPosition;
-            objTransform.rotation = Quaternion.LookRotation(currentToPlayer, Vector3.up);
+            // Update jiggle target position and rotation to follow hand
+            if (jiggleTarget)
+            {
+                jiggleTarget.position = palmPoint.position + horizontalPosition + verticalPosition;
+                jiggleTarget.rotation = Quaternion.LookRotation(currentToPlayer, Vector3.up);
+            }
 
             yield return null;
         }
@@ -223,17 +260,38 @@ public class InteractionManager : MonoBehaviour
         // Rotate to face away from player while disappearing
         Quaternion endRotation = Quaternion.LookRotation(-toPlayer, Vector3.up);
 
+        // Get jiggle target if it exists
+        GameObject jiggleTarget = null;
+        if (jiggleTargets.TryGetValue(objTransform.gameObject, out jiggleTarget))
+        {
+            JiggleFollow jiggleFollow = objTransform.GetComponent<JiggleFollow>();
+            if (jiggleFollow)
+            {
+                jiggleFollow.SetTarget(null);
+            }
+        }
+
         // Animate back to palm position while scaling down
         while (elapsed < desummonAnimationDuration)
         {
             float t = elapsed / desummonAnimationDuration;
 
-            objTransform.position = Vector3.Lerp(startPos, palmPoint.position, t);
-            objTransform.rotation = Quaternion.Slerp(startRotation, endRotation, t);
+            if (jiggleTarget)
+            {
+                jiggleTarget.transform.position = Vector3.Lerp(startPos, palmPoint.position, t);
+                jiggleTarget.transform.rotation = Quaternion.Slerp(startRotation, endRotation, t);
+            }
             objTransform.localScale = Vector3.Lerp(originalScale, originalScale * initialScaleMultiplier, t);
 
             elapsed += Time.deltaTime;
             yield return null;
+        }
+
+        // Clean up jiggle target
+        if (jiggleTarget)
+        {
+            Destroy(jiggleTarget);
+            jiggleTargets.Remove(objTransform.gameObject);
         }
 
         objTransform.gameObject.SetActive(false);
@@ -243,7 +301,7 @@ public class InteractionManager : MonoBehaviour
     {
         // TODO: Add a transition here!!
         MeshRenderer meshRenderer = obj.GetComponent<MeshRenderer>();
-        if (meshRenderer != null)
+        if (meshRenderer)
         {
             meshRenderer.material = stencilMaterial;
         }

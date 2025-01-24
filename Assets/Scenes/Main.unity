@@ -8216,8 +8216,8 @@ Camera:
   m_GameObject: {fileID: 700504740}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -13477,8 +13477,8 @@ MonoBehaviour:
   summonAnimationDuration: 0.5
   desummonAnimationDuration: 0.3
   initialScaleMultiplier: 0.1
-  summonableObjectSpacing: 0.1
-  stencilMaterial: {fileID: 2100000, guid: 6db01edcb1a777a45b20ff8b5624f67d, type: 2}
+  summonableObjectSpacing: 0.12
+  stencilMaterial: {fileID: 2100000, guid: 3004a0a89108af34a87719f13c06e027, type: 2}
 --- !u!4 &1219044374
 Transform:
   m_ObjectHideFlags: 0
@@ -20632,7 +20632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnOnStart: 1
-  MeshMaterial: {fileID: 2100000, guid: aed08302ffc9c1c4ab42be508f9b6091, type: 2}
+  MeshMaterial: {fileID: 2100000, guid: b81e92f418e859144a102f2037eee900, type: 2}
   Colliders: 1
   CutHoles: 0
   castShadows: 1
@@ -22558,6 +22558,83 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1853588902}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2038866512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2038866515}
+  - component: {fileID: 2038866514}
+  - component: {fileID: 2038866513}
+  m_Layer: 0
+  m_Name: '[BuildingBlock] RoomModel'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2038866513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038866512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d607ba0c0320e446ba9d62671d9d7a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnOnStart: 1
+  SeedValue: 0
+  PrefabsToSpawn:
+  - Labels: 7
+    Prefabs:
+    - {fileID: 7113006081731188105, guid: e5b2746f71cc2e94b8477b2e7c2572d9, type: 3}
+    PrefabSelection: 0
+    MatchAspectRatio: 0
+    CalculateFacingDirection: 0
+    Scaling: 0
+    Alignment: 0
+    IgnorePrefabSize: 0
+--- !u!114 &2038866514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038866512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b023183069df224080314a560e6e1ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blockId: b9d9309f-2bf0-40ca-9cee-803aa6a91dae
+  instanceId: 246940da-7420-427f-a4d2-e82ae71fbc45
+  version: 1
+  installationRoutineCheckpoint:
+    _installationRoutineId: 880093e4-1844-41da-9fb9-d806374e5308
+    _installationVariants:
+    - _memberName: AnchorPrefabSpawnerTheme
+      _value: '{"value__":1}'
+--- !u!4 &2038866515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038866512}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2041973663
 GameObject:
   m_ObjectHideFlags: 0
@@ -23600,6 +23677,7 @@ SceneRoots:
   - {fileID: 662128269}
   - {fileID: 2082746152}
   - {fileID: 1849462116}
+  - {fileID: 2038866515}
   - {fileID: 1219044374}
   - {fileID: 1482413245}
   - {fileID: 772886530}

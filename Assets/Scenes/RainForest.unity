@@ -220,7 +220,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &131803771
 Transform:
   m_ObjectHideFlags: 0
@@ -827,6 +827,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2274015577308860606, guid: bc16cb367bead214c95e91c50ca1a60e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5816170305631178828, guid: bc16cb367bead214c95e91c50ca1a60e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.5474
@@ -894,7 +898,7 @@ PrefabInstance:
     - target: {fileID: 7687552284738557287, guid: bc16cb367bead214c95e91c50ca1a60e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7348e06e5b3d0b442b4743d7db9c7542, type: 2}
+      objectReference: {fileID: 2100000, guid: ae45f5c485f16ac4a9a833c65d885c86, type: 2}
     - target: {fileID: 8625766542965473509, guid: bc16cb367bead214c95e91c50ca1a60e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.16854239
@@ -922,6 +926,10 @@ PrefabInstance:
     - target: {fileID: 8625766542965473509, guid: bc16cb367bead214c95e91c50ca1a60e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -72.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 9006970920024693343, guid: bc16cb367bead214c95e91c50ca1a60e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -1947,7 +1955,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

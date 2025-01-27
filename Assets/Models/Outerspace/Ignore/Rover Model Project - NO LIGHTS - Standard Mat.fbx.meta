@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fcd0a4ad0743b224692fc7d6daf93506
+guid: 95c131115ef5d884f8ab903072bd05f6
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,73 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: High_Cliff_Mat
-    second: {fileID: 2100000, guid: 95954c08f2998d8488c825a4d66bc3c8, type: 2}
+      name: Brick_Debri_On_vbnjcbdfw_0
+    second: {fileID: 2100000, guid: 1f52a2406ac33d54f96d34ce33eac8d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat
+    second: {fileID: 2100000, guid: 794cf617996391f4dbd1ad8a7365def1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.1
+    second: {fileID: 2100000, guid: 162843c6abd88a04c96101bd74ee8925, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.2
+    second: {fileID: 2100000, guid: 608b91e42d5fb074fb190bffbcde5970, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.3
+    second: {fileID: 2100000, guid: 81b7c80b4c8c4304996efbc3215903ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.4
+    second: {fileID: 2100000, guid: 89f16792ee62f7548a8c468cd48ff2fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.5
+    second: {fileID: 2100000, guid: 2fe724906759ff44399dfe4c2ebf8892, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.6
+    second: {fileID: 2100000, guid: 6c6a620742cf7cb4ab687445cfeaaba4, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: image2
+    second: {fileID: 2800000, guid: 92edd0c2a1522204fa601416b86d3506, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: image3
+    second: {fileID: 2800000, guid: 135c186739d177c4a8492eae01f02adb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: image4
+    second: {fileID: 2800000, guid: df1e9c4d136db3340bb676299d019ee8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: image5_rgb
+    second: {fileID: 2800000, guid: e03c4c7b81cee8847a2b5e6f500068a5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: image6
+    second: {fileID: 2800000, guid: bc1e8eb039eb3624ab1a7673ecad0356, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: image7
+    second: {fileID: 2800000, guid: ee93dcda1f0330e4c972bcd322a32bbe, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -93,7 +158,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.01
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

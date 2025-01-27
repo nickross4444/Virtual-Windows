@@ -107,7 +107,7 @@ Material:
     - Distance_Fade_Start: 40
     - Vector1_593c5cea6c4a42e993ed03ced4685732: 0.5
     - Vector1_8651797e3e304e108dbd25f9d5a426ba: 0
-    - Vector1_a5b8b09028ce49a39f4d090894c89e22: 0.5
+    - Vector1_a5b8b09028ce49a39f4d090894c89e22: 0.013
     - Vector1_a6983181c8dc4691ba6a28a34c4223a6: 1
     - Wind_Blast: 0.05
     - Wind_Intensity: 0.1
@@ -129,7 +129,7 @@ Material:
     - _ClearCoatSmoothness: 0
     - _ClipDistance: 15
     - _ClipOffset: 30
-    - _Cull: 2
+    - _Cull: 0
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1

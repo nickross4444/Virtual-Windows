@@ -23732,7 +23732,7 @@ MonoBehaviour:
   followSpeed: 30
   damping: 6
   torqueSpeed: 1
-  rotationDamping: 10
+  rotationDamping: 13
 --- !u!54 &3484187906811511454
 Rigidbody:
   m_ObjectHideFlags: 0

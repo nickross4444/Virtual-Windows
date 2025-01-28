@@ -230,7 +230,7 @@ Transform:
   m_GameObject: {fileID: 131803770}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2275954, y: 1.55, z: 2.1163003}
+  m_LocalPosition: {x: 1.2275954, y: 0, z: 2.1163003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -819,63 +819,6 @@ Transform:
   - {fileID: 251601633}
   m_Father: {fileID: 1808886763}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &933865097
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5816170305631178828, guid: bc16cb367bead214c95e91c50ca1a60e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.5474
-      objectReference: {fileID: 0}
-    - target: {fileID: 5816170305631178828, guid: bc16cb367bead214c95e91c50ca1a60e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 7.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 5816170305631178828, guid: bc16cb367bead214c95e91c50ca1a60e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 18.1809
-      objectReference: {fileID: 0}
-    - target: {fileID: 5816170305631178828, guid: bc16cb367bead214c95e91c50ca1a60e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5816170305631178828, guid: bc16cb367bead214c95e91c50ca1a60e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5816170305631178828, guid: bc16cb367bead214c95e91c50ca1a60e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5816170305631178828, guid: bc16cb367bead214c95e91c50ca1a60e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5816170305631178828, guid: bc16cb367bead214c95e91c50ca1a60e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5816170305631178828, guid: bc16cb367bead214c95e91c50ca1a60e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5816170305631178828, guid: bc16cb367bead214c95e91c50ca1a60e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5885825863617205871, guid: bc16cb367bead214c95e91c50ca1a60e, type: 3}
-      propertyPath: m_Name
-      value: Rain Forest
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: bc16cb367bead214c95e91c50ca1a60e, type: 3}
 --- !u!1 &1047401405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,7 +1023,7 @@ LightingSettings:
   m_BounceScale: 1
   m_AlbedoBoost: 1
   m_IndirectOutputScale: 1
-  m_UsingShadowmask: 1
+  m_UsingShadowmask: 0
   m_BakeBackend: 2
   m_LightmapMaxSize: 1024
   m_LightmapSizeFixed: 0
@@ -1093,7 +1036,7 @@ LightingSettings:
   m_CompAOExponent: 1
   m_CompAOExponentDirect: 0
   m_ExtractAO: 0
-  m_MixedBakeMode: 2
+  m_MixedBakeMode: 0
   m_LightmapsBakeMode: 1
   m_FilterMode: 1
   m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
@@ -1987,6 +1930,63 @@ Transform:
   - {fileID: 2034399880}
   m_Father: {fileID: 1808886763}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1786506381792385691
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2012290034592294459, guid: 9224e71a57892fe48b588e29fbe1eaaa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012290034592294459, guid: 9224e71a57892fe48b588e29fbe1eaaa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012290034592294459, guid: 9224e71a57892fe48b588e29fbe1eaaa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012290034592294459, guid: 9224e71a57892fe48b588e29fbe1eaaa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012290034592294459, guid: 9224e71a57892fe48b588e29fbe1eaaa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012290034592294459, guid: 9224e71a57892fe48b588e29fbe1eaaa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012290034592294459, guid: 9224e71a57892fe48b588e29fbe1eaaa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012290034592294459, guid: 9224e71a57892fe48b588e29fbe1eaaa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012290034592294459, guid: 9224e71a57892fe48b588e29fbe1eaaa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012290034592294459, guid: 9224e71a57892fe48b588e29fbe1eaaa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4788182514709042644, guid: 9224e71a57892fe48b588e29fbe1eaaa, type: 3}
+      propertyPath: m_Name
+      value: Rain Forest
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9224e71a57892fe48b588e29fbe1eaaa, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1998,4 +1998,4 @@ SceneRoots:
   - {fileID: 2009868369}
   - {fileID: 49611218}
   - {fileID: 131803771}
-  - {fileID: 933865097}
+  - {fileID: 1786506381792385691}

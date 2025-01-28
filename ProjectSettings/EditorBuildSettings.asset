@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ColorLUT.unity
-    guid: 342d3a72b679bc248bd8bfcf99cec984
+    path: Assets/Scenes/RainForest.unity
+    guid: b1f2613c31767f643a03250d22610211
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 1fdd544a1794a834a98f28999cbd210c, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

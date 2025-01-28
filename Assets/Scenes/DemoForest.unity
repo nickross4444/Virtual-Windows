@@ -817,6 +817,7 @@ GameObject:
   - component: {fileID: 515406040}
   - component: {fileID: 515406042}
   - component: {fileID: 515406041}
+  - component: {fileID: 515406043}
   m_Layer: 0
   m_Name: CenterEyeAnchor
   m_TagString: MainCamera
@@ -898,68 +899,55 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515406039}
   m_Enabled: 1
+--- !u!114 &515406043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515406039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!4 &539106493 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 85415043453611758, guid: 35133968d400d3d48b4a5c2b1ff4ba4f, type: 3}
   m_PrefabInstance: {fileID: 1554262022}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &547412059
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1149482358}
-    m_Modifications:
-    - target: {fileID: 742176769439299785, guid: 3d79c38c4f9973047a5eefd5f944008c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.12986755
-      objectReference: {fileID: 0}
-    - target: {fileID: 742176769439299785, guid: 3d79c38c4f9973047a5eefd5f944008c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.7184111
-      objectReference: {fileID: 0}
-    - target: {fileID: 742176769439299785, guid: 3d79c38c4f9973047a5eefd5f944008c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.8172455
-      objectReference: {fileID: 0}
-    - target: {fileID: 742176769439299785, guid: 3d79c38c4f9973047a5eefd5f944008c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 742176769439299785, guid: 3d79c38c4f9973047a5eefd5f944008c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 742176769439299785, guid: 3d79c38c4f9973047a5eefd5f944008c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 742176769439299785, guid: 3d79c38c4f9973047a5eefd5f944008c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 742176769439299785, guid: 3d79c38c4f9973047a5eefd5f944008c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 742176769439299785, guid: 3d79c38c4f9973047a5eefd5f944008c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 742176769439299785, guid: 3d79c38c4f9973047a5eefd5f944008c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3077814660510882705, guid: 3d79c38c4f9973047a5eefd5f944008c, type: 3}
-      propertyPath: m_Name
-      value: Keyaki_ss1_Summer
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3d79c38c4f9973047a5eefd5f944008c, type: 3}
 --- !u!4 &598743295 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4435472839777118199, guid: c4b751074ac1e514dbbd2a6f4d5b2793, type: 3}
@@ -969,11 +957,6 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f0f32f4839bd1ab43a105ea361794f3d, type: 3}
   m_PrefabInstance: {fileID: 1804589538}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &660608654 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 742176769439299785, guid: 3d79c38c4f9973047a5eefd5f944008c, type: 3}
-  m_PrefabInstance: {fileID: 547412059}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &689449759
 PrefabInstance:
@@ -1686,7 +1669,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 660608654}
   - {fileID: 1592246383}
   - {fileID: 790585241}
   - {fileID: 1496644312}
@@ -2170,6 +2152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1439253467}
   - component: {fileID: 1439253468}
+  - component: {fileID: 1439253469}
   m_Layer: 0
   m_Name: RightEyeAnchor
   m_TagString: Untagged
@@ -2243,6 +2226,50 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1439253469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439253466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1001 &1476588008
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2521,6 +2548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1598365763}
   - component: {fileID: 1598365764}
+  - component: {fileID: 1598365765}
   m_Layer: 0
   m_Name: LeftEyeAnchor
   m_TagString: MainCamera
@@ -2594,6 +2622,50 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1598365765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598365762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!4 &1675364788 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1510644752153866003, guid: 5934210a0c7957145bf75fe07accd356, type: 3}

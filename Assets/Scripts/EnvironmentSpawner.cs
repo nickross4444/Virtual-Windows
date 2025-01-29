@@ -8,6 +8,14 @@ public class EnvironmentSpawner : MonoBehaviour
         Space,
         Water
     }
+    [System.Serializable]
+    public class EnvironmentPrefabMapping
+    {
+        public EnvironmentType type;
+        public GameObject prefab;
+    }
+
+    [SerializeField] private EnvironmentPrefabMapping[] environmentMappings;
     public struct SpawnZone
     {
         public Vector3 position;
@@ -29,6 +37,15 @@ public class EnvironmentSpawner : MonoBehaviour
 
     public void SpawnEnvironment(EnvironmentType environmentType, SpawnZone spawnZone)
     {
-        // TODO: Implement environment spawning
+        var mapping = System.Array.Find(environmentMappings, m => m.type == environmentType);
+        if (mapping == null || mapping.prefab == null)
+        {
+            Debug.LogError($"No prefab found for environment type: {environmentType}");
+            return;
+        }
+        Vector3 rotation = spawnZone.rotation.eulerAngles;
+        rotation.y += 180f;     //face toward the player, not away
+        spawnZone.rotation = Quaternion.Euler(rotation);
+        Instantiate(mapping.prefab, spawnZone.position, spawnZone.rotation);
     }
 }

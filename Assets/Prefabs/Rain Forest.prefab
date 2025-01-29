@@ -1352,6 +1352,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1722965301681520188}
   - {fileID: 5041443973452035950}
   - {fileID: 3504664162181406032}
   - {fileID: 1384184509123577507}
@@ -2134,7 +2135,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8346436912266980360}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c99e9720be9ce0b448a32872ce94de58, type: 3}
@@ -2766,3 +2767,65 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &8065601763336494704
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2012290034592294459}
+    m_Modifications:
+    - target: {fileID: 3802557478313466810, guid: 48cb465e1cee45743b3a06bbd66d43b8, type: 3}
+      propertyPath: m_Name
+      value: Rainforest Ambient Audio
+      objectReference: {fileID: 0}
+    - target: {fileID: 8649151823705497676, guid: 48cb465e1cee45743b3a06bbd66d43b8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8649151823705497676, guid: 48cb465e1cee45743b3a06bbd66d43b8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8649151823705497676, guid: 48cb465e1cee45743b3a06bbd66d43b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8649151823705497676, guid: 48cb465e1cee45743b3a06bbd66d43b8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8649151823705497676, guid: 48cb465e1cee45743b3a06bbd66d43b8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8649151823705497676, guid: 48cb465e1cee45743b3a06bbd66d43b8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8649151823705497676, guid: 48cb465e1cee45743b3a06bbd66d43b8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8649151823705497676, guid: 48cb465e1cee45743b3a06bbd66d43b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8649151823705497676, guid: 48cb465e1cee45743b3a06bbd66d43b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8649151823705497676, guid: 48cb465e1cee45743b3a06bbd66d43b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 48cb465e1cee45743b3a06bbd66d43b8, type: 3}
+--- !u!4 &1722965301681520188 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8649151823705497676, guid: 48cb465e1cee45743b3a06bbd66d43b8, type: 3}
+  m_PrefabInstance: {fileID: 8065601763336494704}
+  m_PrefabAsset: {fileID: 0}

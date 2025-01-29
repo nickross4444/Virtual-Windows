@@ -19977,6 +19977,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6b3970d57a4e544f97a5325b501c43a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  environmentMappings:
+  - type: 0
+    prefab: {fileID: 4788182514709042644, guid: 9224e71a57892fe48b588e29fbe1eaaa, type: 3}
+  - type: 1
+    prefab: {fileID: 3520782730074035682, guid: 4859b23cfc136c542885716a241df12c, type: 3}
+  - type: 2
+    prefab: {fileID: 4169958853689498976, guid: e58148fb570e4194191572037dd98416, type: 3}
 --- !u!4 &1482413245
 Transform:
   m_ObjectHideFlags: 0
@@ -26089,7 +26096,7 @@ MonoBehaviour:
   hideMesh: 0
   Layer: 0
   textureCoordinateModes: []
-  Labels: 8295
+  Labels: 4
 --- !u!114 &1849462115
 MonoBehaviour:
   m_ObjectHideFlags: 0

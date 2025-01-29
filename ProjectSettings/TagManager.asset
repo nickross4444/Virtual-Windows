@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - SpawnedWindow
-  - SpawnedObject
+  - lb_perchTarget
+  - lb_groundTarget
   layers:
   - Default
   - TransparentFX

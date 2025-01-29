@@ -1224,7 +1224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4577173084721035600, guid: dc6d4daf709bedd4bbe2c814e3da7c5a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6062414729058179771, guid: dc6d4daf709bedd4bbe2c814e3da7c5a, type: 3}
       propertyPath: torqueSpeed
@@ -31214,7 +31214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1875545169440560625, guid: dc6d4daf709bedd4bbe2c814e3da7c5a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.14
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1875545169440560625, guid: dc6d4daf709bedd4bbe2c814e3da7c5a, type: 3}
       propertyPath: m_LocalRotation.w

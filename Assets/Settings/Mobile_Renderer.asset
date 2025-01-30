@@ -57,7 +57,7 @@ MonoBehaviour:
   m_Active: 1
   settings:
     passTag: Walls
-    Event: 450
+    Event: 500
     filterSettings:
       RenderQueueType: 0
       LayerMask:

@@ -239,7 +239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6053794342042611836}
   m_Layer: 6
-  m_Name: Volume
+  m_Name: Transparent_Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

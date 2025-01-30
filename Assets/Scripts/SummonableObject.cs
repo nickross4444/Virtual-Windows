@@ -44,6 +44,9 @@ public class SummonableObject : MonoBehaviour
 
             // Make effect mesh transparent
             InteractionManager.Instance.PlaceStencil(collision.gameObject, environmentType, stencilMaterial);
+
+            // Play sound:
+            GetComponent<AudioSource>()?.Play();
         }
     }
     // Fade the pieces out

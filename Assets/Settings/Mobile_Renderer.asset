@@ -15,7 +15,7 @@ MonoBehaviour:
   m_Active: 1
   settings:
     passTag: Forest
-    Event: 1000
+    Event: 450
     filterSettings:
       RenderQueueType: 0
       LayerMask:
@@ -57,7 +57,7 @@ MonoBehaviour:
   m_Active: 1
   settings:
     passTag: Walls
-    Event: 1000
+    Event: 450
     filterSettings:
       RenderQueueType: 0
       LayerMask:
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Active: 1
   settings:
     passTag: Mars
-    Event: 1000
+    Event: 450
     filterSettings:
       RenderQueueType: 0
       LayerMask:
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Active: 1
   settings:
     passTag: Aquarium
-    Event: 1000
+    Event: 450
     filterSettings:
       RenderQueueType: 0
       LayerMask:

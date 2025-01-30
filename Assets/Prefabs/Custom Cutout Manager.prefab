@@ -51,7 +51,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   showRaycast: 1
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 0.09803922}
   lineRenderer: {fileID: 8865688312324363040}
 --- !u!114 &6537243729427296935
 MonoBehaviour:
@@ -66,8 +66,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   handPointer: {fileID: 4963002723583363775}
-  ghostToSpawn: {fileID: 0}
-  windowPrefab: {fileID: 0}
+  ghostToSpawn: {fileID: 9012875283242677917, guid: 53e3db34c80d084478d923163d78806c, type: 3}
+  windowPrefab: {fileID: 1253927832917885083, guid: 18bb3647f0b383e448d509393f3cb01e, type: 3}
   scalingMultiplier: 8
 --- !u!120 &8865688312324363040
 LineRenderer:
@@ -78,7 +78,7 @@ LineRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2063466143151217510}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -93,7 +93,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fe1f616f54e2bf1448268002408f55fe, type: 2}
+  - {fileID: 2100000, guid: 547230fda411ae441990de40147f03d7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

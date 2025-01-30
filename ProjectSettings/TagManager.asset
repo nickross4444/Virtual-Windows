@@ -6,6 +6,7 @@ TagManager:
   tags:
   - lb_perchTarget
   - lb_groundTarget
+  - RaycastTriggerZone
   layers:
   - Default
   - TransparentFX

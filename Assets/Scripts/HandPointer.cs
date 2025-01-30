@@ -49,7 +49,7 @@ public class HandPointer : MonoBehaviour
             lineRenderer.enabled = true;
             lineRenderer.SetPosition(0, startPosition);
             lineRenderer.SetPosition(1, endPosition);
-            lineRenderer.material.color = hitSomething ? Color.green : Color.red;
+            //lineRenderer.material.color = hitSomething ? Color.green : Color.red;
         }
         else if (lineRenderer != null)
         {

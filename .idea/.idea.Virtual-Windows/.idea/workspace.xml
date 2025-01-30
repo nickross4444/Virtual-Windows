@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef32b6cf-0c77-4a62-9fb2-3762c77cdd28" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/DefaultVolumeProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/DefaultVolumeProfile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Virtual-Windows/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Virtual-Windows/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/CustomCutoutVisual.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/CustomCutoutVisual.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Placeholders/CustomRoomBoxEffects.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Placeholders/CustomRoomBoxEffects.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Custom Cutout Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Custom Cutout Manager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CustomStencilWindow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CustomStencilWindow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GhostVisual.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GhostVisual.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Wall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Wall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CustomCutoutTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CustomCutoutTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HandPointer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HandPointer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +26,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.meta.xr.mrutilitykit/Core/Scripts/MRUK.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -32,7 +39,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature-model-selection-and-processing",
+    "git-widget-placeholder": "feature-custom-cutout-user-selection",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -90,6 +97,7 @@
       <workItem from="1737673209127" duration="18000" />
       <workItem from="1737677326164" duration="4446000" />
       <workItem from="1737756592808" duration="6000" />
+      <workItem from="1738183571289" duration="5305000" />
     </task>
     <servers />
   </component>

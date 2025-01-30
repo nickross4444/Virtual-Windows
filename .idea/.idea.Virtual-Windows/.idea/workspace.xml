@@ -6,15 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ef32b6cf-0c77-4a62-9fb2-3762c77cdd28" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Virtual-Windows/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Virtual-Windows/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/CustomCutoutVisual 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/CustomCutoutVisual 1.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Materials/CustomCutoutVisual.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/CustomCutoutVisual.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Placeholders/CustomRoomBoxEffects.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Placeholders/CustomRoomBoxEffects.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Custom Cutout Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Custom Cutout Manager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CustomStencilWindow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CustomStencilWindow.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GhostVisual.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GhostVisual.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Wall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Wall.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CustomCutoutTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CustomCutoutTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HandPointer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HandPointer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Models/Passthrough.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Models/Passthrough.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/3DVolume.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/3DVolume.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +21,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.meta.xr.mrutilitykit/Core/Scripts/MRUK.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/PassthroughWindow/Shaders/SelectivePassthrough.shader" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.meta.xr.sdk.interaction/Runtime/Shaders/OculusHand.shader" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -97,7 +94,7 @@
       <workItem from="1737673209127" duration="18000" />
       <workItem from="1737677326164" duration="4446000" />
       <workItem from="1737756592808" duration="6000" />
-      <workItem from="1738183571289" duration="5305000" />
+      <workItem from="1738183571289" duration="6811000" />
     </task>
     <servers />
   </component>

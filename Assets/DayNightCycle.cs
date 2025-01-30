@@ -1,7 +1,10 @@
 using UnityEngine;
+using System;
 
 public class DayNightCycle : MonoBehaviour
 {
+    [SerializeField]
+    bool useRealTime = false;
     [SerializeField]
     Light sun;
     [SerializeField, Range(0, 24)] float timeOfDay;
@@ -18,10 +21,17 @@ public class DayNightCycle : MonoBehaviour
 
     private void Update()
     {
-        timeOfDay += Time.deltaTime * sunRotationSpeed;
-        if (timeOfDay > 24)
-            timeOfDay = 0;
-
+        if (useRealTime)    
+        {
+            DateTime now = DateTime.Now;
+            timeOfDay = now.Hour + now.Minute / 60f + now.Second / 3600f;
+        }
+        else
+        {
+            timeOfDay += Time.deltaTime * sunRotationSpeed;
+            if (timeOfDay > 24)
+                timeOfDay = 0;
+        }
    
         UpdateSunRotation();
         UpdateLighting();
@@ -48,6 +58,4 @@ public class DayNightCycle : MonoBehaviour
         RenderSettings.ambientSkyColor = skyColor.Evaluate(timeFraction);
         sun.color = sunColor.Evaluate(timeFraction);
     }
-
-
 }

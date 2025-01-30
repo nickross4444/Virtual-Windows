@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4771275952528904320}
   - component: {fileID: 5756300331072073310}
   - component: {fileID: 6021646745192441965}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_MZRa_Fern_B052 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 8406175795313272834}
   - component: {fileID: 2221699189766374501}
   - component: {fileID: 7653710551005099533}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_MZRa_Fern_B052 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 8199382450254025965}
   - component: {fileID: 6254744412074567304}
   - component: {fileID: 8902761151631017081}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_MZRa_Fern_B052 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 3436288618585489593}
   - component: {fileID: 6471489737227798978}
   - component: {fileID: 4981087426327913674}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tree.007SM_MZRa_Monstera_B072 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 6813613553276494155}
   - component: {fileID: 8669577921472809562}
   - component: {fileID: 97218477199771049}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_MZRa_Banana_B091 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,7 +443,7 @@ GameObject:
   - component: {fileID: 5041443973452035950}
   - component: {fileID: 9127728833047094643}
   - component: {fileID: 4047901515604105111}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rain Forest Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -529,7 +529,7 @@ GameObject:
   - component: {fileID: 6904276190541631511}
   - component: {fileID: 7686344636916696819}
   - component: {fileID: 8104937231034550280}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_MZRa_Palm_B082 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -615,7 +615,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1384184509123577507}
   - component: {fileID: 8508671209362500812}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Reflection Probe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -681,7 +681,7 @@ GameObject:
   - component: {fileID: 9090119174741037425}
   - component: {fileID: 8200094867483678876}
   - component: {fileID: 5659758621793248067}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_MZRa_Fern_B052 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -767,7 +767,7 @@ GameObject:
   - component: {fileID: 4008573680107690236}
   - component: {fileID: 3855233528410802303}
   - component: {fileID: 7386561970868005294}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_MZRa_Banana_B091 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -854,7 +854,7 @@ GameObject:
   - component: {fileID: 8898721132320663273}
   - component: {fileID: 5924633838616101277}
   - component: {fileID: 95763756479503628}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_MZRa_Fern_B052
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -940,7 +940,7 @@ GameObject:
   - component: {fileID: 2595669934725876098}
   - component: {fileID: 5132738757744848944}
   - component: {fileID: 2679154083716807183}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_MZRa_Fern_B052 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1029,7 +1029,7 @@ GameObject:
   - component: {fileID: 5624530523399976748}
   - component: {fileID: 4245050347416863971}
   - component: {fileID: 547592869489989272}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water lake Shader Sample
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1247,7 +1247,7 @@ GameObject:
   - component: {fileID: 6497413067198436129}
   - component: {fileID: 4405200573727532560}
   - component: {fileID: 26099780842714029}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_MZRa_Banana_B091 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1332,7 +1332,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2012290034592294459}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rain Forest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1369,7 +1369,7 @@ GameObject:
   - component: {fileID: 2876042794262217963}
   - component: {fileID: 5248983854605139951}
   - component: {fileID: 896962206659468838}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_MZRa_Fern_B052 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1453,7 +1453,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3504664162181406032}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Foliage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1509,7 +1509,7 @@ GameObject:
   - component: {fileID: 4013246293173660390}
   - component: {fileID: 3601184980795549557}
   - component: {fileID: 5049268090352880493}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_MZRa_Fern_B052 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1595,7 +1595,7 @@ GameObject:
   - component: {fileID: 3492031025539897002}
   - component: {fileID: 8284509867673767107}
   - component: {fileID: 6441075448962580990}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_MZRa_Fern_B052 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1681,7 +1681,7 @@ GameObject:
   - component: {fileID: 3479259273726337444}
   - component: {fileID: 3044897970638147103}
   - component: {fileID: 3130069457643685213}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_MZRa_Palm_B082
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1768,7 +1768,7 @@ GameObject:
   - component: {fileID: 7091377460688310847}
   - component: {fileID: 2618704742997784474}
   - component: {fileID: 8454495178463529517}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_MZRa_Fern_B052 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1854,7 +1854,7 @@ GameObject:
   - component: {fileID: 2786138812395746957}
   - component: {fileID: 8522763776278980532}
   - component: {fileID: 5269549970966173424}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_MZRa_Banana_B091 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1941,7 +1941,7 @@ GameObject:
   - component: {fileID: 875844817247334154}
   - component: {fileID: 7490422758568716197}
   - component: {fileID: 3200408152094512250}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_MZRa_Banana_B091 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2031,13 +2031,13 @@ GameObject:
   - component: {fileID: 4839968361758081812}
   - component: {fileID: 1280300539648045760}
   - component: {fileID: 3236617118672126069}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SImple ripple water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6669832877767641735
 Transform:
   m_ObjectHideFlags: 0
@@ -2252,13 +2252,13 @@ GameObject:
   - component: {fileID: 4491880841932229826}
   - component: {fileID: 7120489024546370527}
   - component: {fileID: 4256772656916292945}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Plane URP Lit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8316565982501704786
 Transform:
   m_ObjectHideFlags: 0
@@ -2473,7 +2473,7 @@ GameObject:
   - component: {fileID: 8098612519370650827}
   - component: {fileID: 563745602769453356}
   - component: {fileID: 6673904724653340552}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2691,7 +2691,7 @@ GameObject:
   - component: {fileID: 8644924596599772127}
   - component: {fileID: 1144466176045939331}
   - component: {fileID: 6407081345489397088}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_MZRa_Banana_B091 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2778,6 +2778,10 @@ PrefabInstance:
     - target: {fileID: 3802557478313466810, guid: 48cb465e1cee45743b3a06bbd66d43b8, type: 3}
       propertyPath: m_Name
       value: Rainforest Ambient Audio
+      objectReference: {fileID: 0}
+    - target: {fileID: 3802557478313466810, guid: 48cb465e1cee45743b3a06bbd66d43b8, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8649151823705497676, guid: 48cb465e1cee45743b3a06bbd66d43b8, type: 3}
       propertyPath: m_LocalPosition.x

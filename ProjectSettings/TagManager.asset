@@ -6,6 +6,7 @@ TagManager:
   tags:
   - lb_perchTarget
   - lb_groundTarget
+  - lb_bird
   - RaycastTriggerZone
   layers:
   - Default
@@ -15,7 +16,10 @@ TagManager:
   - Water
   - UI
   - Wall
-  - 
+  - Forest
+  - Mars
+  - Aquarium
+  - Birds
   - 
   - 
   - 

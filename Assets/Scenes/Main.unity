@@ -1110,6 +1110,10 @@ PrefabInstance:
       propertyPath: environmentType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1454891147512274272, guid: dc6d4daf709bedd4bbe2c814e3da7c5a, type: 3}
+      propertyPath: stencilMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 56ed6f06a10ae0b46ac714b2c01e4d6f, type: 2}
     - target: {fileID: 1800332616745121493, guid: dc6d4daf709bedd4bbe2c814e3da7c5a, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -8049,25 +8053,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3535371675306456779, guid: dc6d4daf709bedd4bbe2c814e3da7c5a, type: 3}
   m_PrefabInstance: {fileID: 1555274811}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &526175619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526175614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82e94bfc891ff4eb5854cc7f91f4de03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetGameObject: {fileID: 1555274813}
-  breakPointsParent: {fileID: 0}
-  interiorMaterial: {fileID: 2100000, guid: 9848201f284399d42a84ff91d4575375, type: 2}
-  demolishKey: 0
-  resultScale: 0.95
-  resultParent: {fileID: 1555274812}
-  logText: {fileID: 0}
 --- !u!1 &530162625
 GameObject:
   m_ObjectHideFlags: 0
@@ -16767,7 +16752,6 @@ MonoBehaviour:
   desummonAnimationDuration: 0.3
   initialScaleMultiplier: 0.1
   summonableObjectSpacing: 0.16
-  stencilMaterial: {fileID: 2100000, guid: 3004a0a89108af34a87719f13c06e027, type: 2}
 --- !u!4 &1219044374
 Transform:
   m_ObjectHideFlags: 0
@@ -21336,6 +21320,10 @@ PrefabInstance:
       propertyPath: environmentType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1454891147512274272, guid: dc6d4daf709bedd4bbe2c814e3da7c5a, type: 3}
+      propertyPath: stencilMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ab160df177f152489da1596ed84e94b, type: 2}
     - target: {fileID: 1800332616745121493, guid: dc6d4daf709bedd4bbe2c814e3da7c5a, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -22103,9 +22091,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 576554433}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3535371675306456779, guid: dc6d4daf709bedd4bbe2c814e3da7c5a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 526175619}
     - targetCorrespondingSourceObject: {fileID: 6766643269158736341, guid: dc6d4daf709bedd4bbe2c814e3da7c5a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1555274814}
@@ -30775,6 +30760,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 1454891147512274272, guid: dc6d4daf709bedd4bbe2c814e3da7c5a, type: 3}
+      propertyPath: stencilMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 81d472da963c5b94fb27edf5a6d79b6a, type: 2}
     - target: {fileID: 1465787957518376322, guid: dc6d4daf709bedd4bbe2c814e3da7c5a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.9

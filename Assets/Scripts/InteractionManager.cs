@@ -24,8 +24,6 @@ public class InteractionManager : MonoBehaviour
     [SerializeField] private float initialScaleMultiplier = 0.1f;  // Initial scale when objects appear
     [SerializeField] private float summonableObjectSpacing = 0.1f;  // Horizontal spacing between objects
 
-    [Header("Stencil")]
-    [SerializeField] private Material stencilMaterial;
 
     private HandGrabInteractor[] handGrabInteractors;  // Available hand interactors
     private Transform playerTransform;  // Reference to player camera
@@ -297,7 +295,7 @@ public class InteractionManager : MonoBehaviour
         objTransform.gameObject.SetActive(false);
     }
 
-    public void PlaceStencil(GameObject obj, EnvironmentSpawner.EnvironmentType environmentType)
+    public void PlaceStencil(GameObject obj, EnvironmentSpawner.EnvironmentType environmentType, Material stencilMaterial)
     {
         // TODO: Add a transition here!!
         MeshRenderer meshRenderer = obj.GetComponent<MeshRenderer>();
@@ -307,7 +305,7 @@ public class InteractionManager : MonoBehaviour
         }
         EnvironmentSpawner.SpawnZone spawnZone = new EnvironmentSpawner.SpawnZone();
         spawnZone.position = obj.transform.position;
-        spawnZone.size = obj.transform.localScale;      // TODO: add depth
+        spawnZone.size = obj.transform.localScale;
         spawnZone.rotation = obj.transform.rotation;
         EnvironmentSpawner.Instance.SpawnEnvironment(environmentType, spawnZone);
     }

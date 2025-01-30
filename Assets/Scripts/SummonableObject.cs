@@ -6,6 +6,7 @@ using UnityEngine;
 public class SummonableObject : MonoBehaviour
 {
     [SerializeField] EnvironmentSpawner.EnvironmentType environmentType;
+    [SerializeField] Material stencilMaterial;
     [SerializeField] float destroyVelocityThreshold = 2f;
     [SerializeField] GameObject destroyedParent;
     List<GameObject> pieces = new List<GameObject>();
@@ -42,7 +43,7 @@ public class SummonableObject : MonoBehaviour
             }
 
             // Make effect mesh transparent
-            InteractionManager.Instance.PlaceStencil(collision.gameObject, environmentType);
+            InteractionManager.Instance.PlaceStencil(collision.gameObject, environmentType, stencilMaterial);
         }
     }
     // Fade the pieces out

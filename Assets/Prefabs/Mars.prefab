@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1967463992457541895}
   - component: {fileID: 3291769266318962681}
   - component: {fileID: 9004346621938849427}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mars_One4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 2189057316868233051}
   - component: {fileID: 5288184475038576413}
   - component: {fileID: 278964654823376783}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mars_One___module03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8068456773713806913}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 2114183762487086863}
   - component: {fileID: 3447428143348813270}
   - component: {fileID: 3834842849753559454}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mars_One___module02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 4704522347577964507}
   - component: {fileID: 7283160766846054971}
   - component: {fileID: 2503030810943802721}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mars_One___module05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -392,7 +392,7 @@ GameObject:
   - component: {fileID: 87504605404091088}
   - component: {fileID: 7913923169369510963}
   - component: {fileID: 7820437680919465264}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mars_One1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -483,7 +483,7 @@ GameObject:
   - component: {fileID: 5541505899414263914}
   - component: {fileID: 3260109875066926652}
   - component: {fileID: 8041733574473858373}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mars_One___ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -572,7 +572,7 @@ GameObject:
   - component: {fileID: 626711451082555404}
   - component: {fileID: 8267477693053013558}
   - component: {fileID: 3963144179363085841}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mars_One___sky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -658,7 +658,7 @@ GameObject:
   - component: {fileID: 1751250495605687597}
   - component: {fileID: 4692539284807195930}
   - component: {fileID: 8669297790139129569}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mars_One___flag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -744,7 +744,7 @@ GameObject:
   - component: {fileID: 242977309992455464}
   - component: {fileID: 7114552979125094964}
   - component: {fileID: 757709797396110526}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mars_One___m6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -829,7 +829,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8964347040136748238}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Offset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -877,7 +877,7 @@ GameObject:
   - component: {fileID: 3961753517044275188}
   - component: {fileID: 957859838573087851}
   - component: {fileID: 6851802660467796374}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mars_One6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -963,7 +963,7 @@ GameObject:
   - component: {fileID: 1899577033089605094}
   - component: {fileID: 2060475360933438922}
   - component: {fileID: 8933962120644073794}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mars_One___module01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1050,7 +1050,7 @@ GameObject:
   - component: {fileID: 6371837978918628124}
   - component: {fileID: 8322379688601207620}
   - component: {fileID: 1394116825199361505}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mars_One___module04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1137,7 +1137,7 @@ GameObject:
   - component: {fileID: 4886233319505475188}
   - component: {fileID: 237104009776938717}
   - component: {fileID: 972230910679967633}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mars_One5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1223,7 +1223,7 @@ GameObject:
   - component: {fileID: 4562819813485814999}
   - component: {fileID: 329770422007282950}
   - component: {fileID: 3562676221375015104}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mars_One___antenna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1347,9 +1347,189 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 490112115312237670, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 874309148911092094, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 877720530610458928, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 915854674153499590, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1376795731065564383, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1440631921720031143, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1946404032447668743, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2028777018869139255, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2131374322533156701, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2267110684517843139, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2442156666533651266, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475233840872542718, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658757515746954091, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2816745434423361825, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857149233021357962, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3255496457274982711, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3441993266431785604, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3452790197629734149, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3452830923350393791, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3975879018707445715, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4264132940657711024, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306979632574904120, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4323398622089866276, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4518516438857446881, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274921948669602670, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5316617604969153661, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5894608015768210625, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
       propertyPath: m_Name
       value: Astronaut
+      objectReference: {fileID: 0}
+    - target: {fileID: 5894608015768210625, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6110376940237223649, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134017818953511002, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6191715580533186052, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6229043481935860442, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7235452555028820020, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7551437145773443265, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7551932078845594785, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658514547080457269, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897324997339667708, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8322767046450730562, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421785847324918243, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550101318191235325, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654323997784061839, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8713351968355005243, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8752160687566132588, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8975163904353025460, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123011794321361258, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153080242900108033, guid: b3dd04605a3d00742b350f33eece7fdb, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1412,6 +1592,10 @@ PrefabInstance:
     - target: {fileID: 8218238371081425359, guid: d896bab7e85cd0f4a8b4bca77669ee91, type: 3}
       propertyPath: m_Name
       value: Outerspace Ambient Audio
+      objectReference: {fileID: 0}
+    - target: {fileID: 8218238371081425359, guid: d896bab7e85cd0f4a8b4bca77669ee91, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

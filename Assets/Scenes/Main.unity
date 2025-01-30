@@ -7261,6 +7261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Custom Frame Trigger
       objectReference: {fileID: 0}
+    - target: {fileID: 7923183018948244021, guid: 9651bb66f30865144935a54461c22e77, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7413,6 +7417,14 @@ PrefabInstance:
     - target: {fileID: 585935712408308692, guid: ccc24f1d604229c4c9e4540a2cc41565, type: 3}
       propertyPath: m_Name
       value: User Selection Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 585935712408308692, guid: ccc24f1d604229c4c9e4540a2cc41565, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 674410578275092621, guid: ccc24f1d604229c4c9e4540a2cc41565, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 674410578275092621, guid: ccc24f1d604229c4c9e4540a2cc41565, type: 3}
       propertyPath: customFrameMesh

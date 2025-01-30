@@ -5,11 +5,12 @@ public class HandPinchDetector : MonoBehaviour
     [SerializeField] private HandPointer handPointer;
     [SerializeField] private GameObject ghostToSpawn; 
     [SerializeField] private GameObject windowPrefab; 
-    [SerializeField] private float scalingMultiplier = 8f; 
+    //[SerializeField] private float scalingMultiplier = 8f; 
     
     private GameObject _spawnedGhost; 
     private Vector3 _initialHandPosition; 
     private Vector3 _initialScale;
+    private Vector3 _initialHitPoint;
 
     private bool _hasPinched;
     private bool _isIndexFingerPinching;
@@ -34,10 +35,9 @@ public class HandPinchDetector : MonoBehaviour
             
             if (Physics.Raycast(handPointer.rightHand.PointerPose.position, handPointer.rightHand.PointerPose.forward, out RaycastHit hit, Mathf.Infinity, handPointer.targetLayer))
             {
-                Vector3 hitPoint = hit.point; 
-                Vector3 hitNormal = hit.normal; 
+                _initialHitPoint = hit.point; 
                 
-                _spawnedGhost = Instantiate(ghostToSpawn, hitPoint, Quaternion.LookRotation(hitNormal));
+                _spawnedGhost = Instantiate(ghostToSpawn, _initialHitPoint, Quaternion.LookRotation(hit.normal));
                 
                 _initialHandPosition = hand.transform.position;
                 _initialScale = _spawnedGhost.transform.localScale;
@@ -46,19 +46,15 @@ public class HandPinchDetector : MonoBehaviour
         // Adjust scaling while pinching
         else if (_hasPinched && _isIndexFingerPinching)
         {
-            if (_spawnedGhost != null)
+            if (_spawnedGhost != null && Physics.Raycast(handPointer.rightHand.PointerPose.position, handPointer.rightHand.PointerPose.forward, out RaycastHit hit, Mathf.Infinity, handPointer.targetLayer))
             {
-                Vector3 currentHandPosition = hand.transform.position;
+                Vector3 currentHitPoint = hit.point;
+                Vector3 distance = currentHitPoint - _initialHitPoint;
+                float horizontalDistance = new Vector3(distance.x, 0, distance.z).magnitude;
+                float verticalDistance = distance.y;
                 
-                float xDifference = (currentHandPosition.x - _initialHandPosition.x) * scalingMultiplier;
-                float yDifference = (currentHandPosition.y - _initialHandPosition.y) * scalingMultiplier;
-                
-                Vector3 localScaleChange = _spawnedGhost.transform.InverseTransformDirection(new Vector3(xDifference, yDifference, 0));
-                
-                float newScaleX = _initialScale.x + localScaleChange.x;
-                float newScaleY = _initialScale.y + localScaleChange.y;
-                
-                _spawnedGhost.transform.localScale = new Vector3(newScaleX, newScaleY, _initialScale.z);
+                _spawnedGhost.transform.position = (_initialHitPoint + currentHitPoint) / 2f;   //midpoint
+                _spawnedGhost.transform.localScale = new Vector3(horizontalDistance, verticalDistance, _initialScale.z);
             }
         }
         // End pinching

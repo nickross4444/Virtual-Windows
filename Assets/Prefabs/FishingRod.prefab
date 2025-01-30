@@ -1187,6 +1187,7 @@ GameObject:
   - component: {fileID: 7174427145069503051}
   - component: {fileID: 3647500154016743441}
   - component: {fileID: 8094172354785732964}
+  - component: {fileID: 9049042726341640892}
   m_Layer: 0
   m_Name: FishingRod
   m_TagString: Untagged
@@ -1263,6 +1264,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5425936, y: 0.424674, z: 0.07486243}
   m_Center: {x: -0.10638463, y: 0.28346995, z: -0.058804065}
+--- !u!114 &9049042726341640892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5957444314940877681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1544234d730624a4d9e6ebe391662c42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawn_Pos: {fileID: 0}
+  birdSpawnTimer: 10
 --- !u!1 &7962522448484968254
 GameObject:
   m_ObjectHideFlags: 0

@@ -1180,6 +1180,14 @@ PrefabInstance:
       propertyPath: stencilMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 56ed6f06a10ae0b46ac714b2c01e4d6f, type: 2}
+    - target: {fileID: 1454891147512274272, guid: dc6d4daf709bedd4bbe2c814e3da7c5a, type: 3}
+      propertyPath: _environmentType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454891147512274272, guid: dc6d4daf709bedd4bbe2c814e3da7c5a, type: 3}
+      propertyPath: _stencilMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 56ed6f06a10ae0b46ac714b2c01e4d6f, type: 2}
     - target: {fileID: 1800332616745121493, guid: dc6d4daf709bedd4bbe2c814e3da7c5a, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -7263,7 +7271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7923183018948244021, guid: 9651bb66f30865144935a54461c22e77, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7273,11 +7281,6 @@ PrefabInstance:
 --- !u!1 &455464709 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1935334630487496338, guid: 9651bb66f30865144935a54461c22e77, type: 3}
-  m_PrefabInstance: {fileID: 455464708}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &455464710 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7923183018948244021, guid: 9651bb66f30865144935a54461c22e77, type: 3}
   m_PrefabInstance: {fileID: 455464708}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &456291386
@@ -7420,7 +7423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 585935712408308692, guid: ccc24f1d604229c4c9e4540a2cc41565, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 674410578275092621, guid: ccc24f1d604229c4c9e4540a2cc41565, type: 3}
       propertyPath: m_Enabled
@@ -17342,11 +17345,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72daec8f79b501c479f3f7a1e41fd140, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customCutoutManager: {fileID: 578913731}
   summonableObjects:
   - {fileID: 278928396}
   - {fileID: 526175614}
   - {fileID: 1885747520}
-  - {fileID: 455464710}
   summonAngleThreshold: 30
   desummonAngleThreshold: 45
   summonHeightOffset: 0.1
@@ -22340,6 +22343,14 @@ PrefabInstance:
       propertyPath: stencilMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 3ab160df177f152489da1596ed84e94b, type: 2}
+    - target: {fileID: 1454891147512274272, guid: dc6d4daf709bedd4bbe2c814e3da7c5a, type: 3}
+      propertyPath: _environmentType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454891147512274272, guid: dc6d4daf709bedd4bbe2c814e3da7c5a, type: 3}
+      propertyPath: _stencilMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ab160df177f152489da1596ed84e94b, type: 2}
     - target: {fileID: 1800332616745121493, guid: dc6d4daf709bedd4bbe2c814e3da7c5a, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -27322,13 +27333,13 @@ GameObject:
   - component: {fileID: 1849462116}
   - component: {fileID: 1849462115}
   - component: {fileID: 1849462114}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: '[BuildingBlock] Effect Mesh'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1849462114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32148,6 +32159,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1454891147512274272, guid: dc6d4daf709bedd4bbe2c814e3da7c5a, type: 3}
       propertyPath: stencilMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 81d472da963c5b94fb27edf5a6d79b6a, type: 2}
+    - target: {fileID: 1454891147512274272, guid: dc6d4daf709bedd4bbe2c814e3da7c5a, type: 3}
+      propertyPath: _stencilMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 81d472da963c5b94fb27edf5a6d79b6a, type: 2}
     - target: {fileID: 1465787957518376322, guid: dc6d4daf709bedd4bbe2c814e3da7c5a, type: 3}

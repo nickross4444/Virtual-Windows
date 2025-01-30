@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class HandPointer : MonoBehaviour
 {
-    public OVRHand rightHand;
+    public OVRHand pointingHand;
     public GameObject currentTarget {get; private set;}
     public LayerMask targetLayer;
 
@@ -16,7 +16,7 @@ public class HandPointer : MonoBehaviour
 
     private void Update()
     {
-        CheckHandPointer(rightHand);
+        CheckHandPointer(pointingHand);
     }
 
     private void CheckHandPointer(OVRHand hand)

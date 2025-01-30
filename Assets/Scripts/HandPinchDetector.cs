@@ -5,26 +5,25 @@ public class HandPinchDetector : MonoBehaviour
     [SerializeField] private HandPointer handPointer;
     [SerializeField] private GameObject ghostToSpawn; 
     [SerializeField] private GameObject windowPrefab; 
-    //[SerializeField] private float scalingMultiplier = 8f; 
+    public Material stencilMaterial;
+    public EnvironmentSpawner.EnvironmentType activeEnvironmentType;
     
     private GameObject _spawnedGhost; 
-    private Vector3 _initialHandPosition; 
+    private GameObject effectMeshWall;
     private Vector3 _initialScale;
     private Vector3 _initialHitPoint;
 
     private bool _hasPinched;
     private bool _isIndexFingerPinching;
-    private float _pinchStrength;
     private OVRHand.TrackingConfidence _confidence;
 
     private void Update()
     {
-        CheckPinch(handPointer.rightHand);
+        CheckPinch(handPointer.pointingHand);
     }
 
     void CheckPinch(OVRHand hand)
     {
-        _pinchStrength = hand.GetFingerPinchStrength(OVRHand.HandFinger.Index);
         _isIndexFingerPinching = hand.GetFingerIsPinching(OVRHand.HandFinger.Index);
         _confidence = hand.GetFingerConfidence(OVRHand.HandFinger.Index);
 
@@ -33,20 +32,19 @@ public class HandPinchDetector : MonoBehaviour
         {
             _hasPinched = true;
             
-            if (Physics.Raycast(handPointer.rightHand.PointerPose.position, handPointer.rightHand.PointerPose.forward, out RaycastHit hit, Mathf.Infinity, handPointer.targetLayer))
+            if (Physics.Raycast(handPointer.pointingHand.PointerPose.position, handPointer.pointingHand.PointerPose.forward, out RaycastHit hit, Mathf.Infinity, handPointer.targetLayer))
             {
                 _initialHitPoint = hit.point; 
-                
+                effectMeshWall = hit.collider.gameObject;
                 _spawnedGhost = Instantiate(ghostToSpawn, _initialHitPoint, Quaternion.LookRotation(hit.normal));
                 
-                _initialHandPosition = hand.transform.position;
                 _initialScale = _spawnedGhost.transform.localScale;
             }
         }
         // Adjust scaling while pinching
         else if (_hasPinched && _isIndexFingerPinching)
         {
-            if (_spawnedGhost != null && Physics.Raycast(handPointer.rightHand.PointerPose.position, handPointer.rightHand.PointerPose.forward, out RaycastHit hit, Mathf.Infinity, handPointer.targetLayer))
+            if (_spawnedGhost != null && Physics.Raycast(handPointer.pointingHand.PointerPose.position, handPointer.pointingHand.PointerPose.forward, out RaycastHit hit, Mathf.Infinity, handPointer.targetLayer))
             {
                 Vector3 currentHitPoint = hit.point;
                 Vector3 distance = currentHitPoint - _initialHitPoint;
@@ -78,7 +76,9 @@ public class HandPinchDetector : MonoBehaviour
         );
         
         replacementObject.transform.localScale = _spawnedGhost.transform.localScale;
-
+        MeshRenderer meshRenderer = replacementObject.GetComponentInChildren<MeshRenderer>();
+        meshRenderer.material = stencilMaterial;
+        EnvironmentSpawner.Instance.SpawnEnvironment(activeEnvironmentType, effectMeshWall.transform, replacementObject);
         Destroy(_spawnedGhost);
         
         _spawnedGhost = null;

@@ -134,6 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b07a077adaf256c4eb7c66db8dfbf3d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useRealTime: 0
   sun: {fileID: 2657862397785954373}
   timeOfDay: 0
   sunRotationSpeed: 0.5

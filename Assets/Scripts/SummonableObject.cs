@@ -5,7 +5,10 @@ using UnityEngine;
 
 public class SummonableObject : MonoBehaviour
 {
-    [SerializeField] EnvironmentSpawner.EnvironmentType environmentType;
+    [SerializeField] private EnvironmentSpawner.EnvironmentType _environmentType;
+    public EnvironmentSpawner.EnvironmentType environmentType => _environmentType;
+    [SerializeField] private Material _stencilMaterial;
+    public Material stencilMaterial => _stencilMaterial;
     [SerializeField] float destroyVelocityThreshold = 2f;
     [SerializeField] GameObject destroyedParent;
     List<GameObject> pieces = new List<GameObject>();
@@ -18,7 +21,8 @@ public class SummonableObject : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.relativeVelocity.magnitude > destroyVelocityThreshold && collision.gameObject.name.Contains("Effect"))
+        //if (collision.relativeVelocity.magnitude > destroyVelocityThreshold && collision.gameObject.name.Contains("Effect"))
+        if (collision.relativeVelocity.magnitude > destroyVelocityThreshold && collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
             destroyedParent.SetActive(true);
             GetComponentInChildren<MeshRenderer>().enabled = false;
@@ -42,7 +46,10 @@ public class SummonableObject : MonoBehaviour
             }
 
             // Make effect mesh transparent
-            InteractionManager.Instance.PlaceStencil(collision.gameObject, environmentType);
+            InteractionManager.Instance.PlaceStencil(collision.gameObject, environmentType, stencilMaterial);
+
+            // Play sound:
+            GetComponent<AudioSource>()?.Play();
         }
     }
     // Fade the pieces out

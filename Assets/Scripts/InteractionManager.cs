@@ -3,12 +3,15 @@ using UnityEngine;
 using Oculus.Interaction.HandGrab;
 using System.Collections.Generic;
 using Oculus.Interaction;
+using System.Linq;
 
 // Manages the summoning and desummoning of objects in VR using hand gestures
 public class InteractionManager : MonoBehaviour
 {
     // Add singleton instance
     public static InteractionManager Instance { get; private set; }
+    [Header("Managers")]
+    [SerializeField] GameObject customCutoutManager;
 
     [Header("Summonable Objects")]
     [SerializeField] private GameObject[] summonableObjects;  // Objects that can be summoned
@@ -24,14 +27,14 @@ public class InteractionManager : MonoBehaviour
     [SerializeField] private float initialScaleMultiplier = 0.1f;  // Initial scale when objects appear
     [SerializeField] private float summonableObjectSpacing = 0.1f;  // Horizontal spacing between objects
 
-    [Header("Stencil")]
-    [SerializeField] private Material stencilMaterial;
 
     private HandGrabInteractor[] handGrabInteractors;  // Available hand interactors
+    private OVRHand[] OVRHands;
     private Transform playerTransform;  // Reference to player camera
     private HandGrabInteractor summoningHand;  // Currently active summoning hand
     private Dictionary<Transform, Vector3> originalScales = new Dictionary<Transform, Vector3>();  // Original object scales
     private Dictionary<GameObject, Coroutine> summonCoroutines = new Dictionary<GameObject, Coroutine>();  // Active animations
+    private List<GameObject> selectedObjects = new List<GameObject>();
 
     private void Awake()
     {
@@ -50,6 +53,7 @@ public class InteractionManager : MonoBehaviour
     {
         // Find all hand interactors in the scene
         handGrabInteractors = FindObjectsByType<HandGrabInteractor>(FindObjectsSortMode.None);
+        OVRHands = FindObjectsByType<OVRHand>(FindObjectsSortMode.None);
         playerTransform = GameObject.FindGameObjectWithTag("MainCamera")?.transform;
 
         // Store original scales and setup interaction events for each summonable object
@@ -88,11 +92,15 @@ public class InteractionManager : MonoBehaviour
         if (!summoningHand && angleToUp < summonAngleThreshold)
         {
             StartSummonSequence(hand);
+            customCutoutManager.SetActive(false);
         }
         // Desummon if palm faces down (large angle) and this hand is currently summoning
         else if (summoningHand == hand && angleToUp > desummonAngleThreshold)
         {
             StartDesummonSequence();
+            if(selectedObjects.Count > 0) {
+                ActivateCustomCutout(selectedObjects[0]);
+            }
         }
     }
 
@@ -102,6 +110,7 @@ public class InteractionManager : MonoBehaviour
         // When object is grabbed, remove from active list and restore original scale
         if (args.NewState == InteractableState.Select)
         {
+            selectedObjects.Add(obj);
             activeSummonableObjects.Remove(obj);
             if (summonCoroutines.ContainsKey(obj))
             {
@@ -120,8 +129,31 @@ public class InteractionManager : MonoBehaviour
                 Destroy(jiggleTargets[obj]);
                 jiggleTargets.Remove(obj);
             }
-            //Change to non-trigger collider
+            // Change to non-trigger collider
             obj.GetComponentInChildren<Collider>().isTrigger = false;
+
+            // Manage custom cutout if not summoning
+            if(!summoningHand) {
+                ActivateCustomCutout(obj);
+            }
+        } else  {
+            if(selectedObjects.Contains(obj)) {    //deactivate if a the held object is dropped
+                customCutoutManager.SetActive(false);
+            }
+            selectedObjects.Remove(obj);
+        }
+    }
+    void ActivateCustomCutout(GameObject obj) {
+        SummonableObject summonableObject = obj.GetComponent<SummonableObject>();
+        if(summonableObject)
+        {
+            customCutoutManager.SetActive(true);
+            OVRHand furthestHand = OVRHands.OrderByDescending(d => Vector3.Distance(d.transform.position, obj.transform.position)).FirstOrDefault();
+            customCutoutManager.GetComponent<HandPointer>().pointingHand = furthestHand;
+            Material stencilMaterial = summonableObject.stencilMaterial;
+            HandPinchDetector handPinchDetector = customCutoutManager.GetComponent<HandPinchDetector>();
+            handPinchDetector.stencilMaterial = stencilMaterial;
+            handPinchDetector.activeEnvironmentType = summonableObject.environmentType;
         }
     }
 
@@ -297,18 +329,16 @@ public class InteractionManager : MonoBehaviour
         objTransform.gameObject.SetActive(false);
     }
 
-    public void PlaceStencil(GameObject obj, EnvironmentSpawner.EnvironmentType environmentType)
+    public void PlaceStencil(GameObject obj, EnvironmentSpawner.EnvironmentType environmentType, Material stencilMaterial)
     {
         // TODO: Add a transition here!!
         MeshRenderer meshRenderer = obj.GetComponent<MeshRenderer>();
         if (meshRenderer)
         {
             meshRenderer.material = stencilMaterial;
+            obj.layer = LayerMask.NameToLayer("Default");       //allow the stencil to render normally(instead of wall layer passthrough)
         }
-        EnvironmentSpawner.SpawnZone spawnZone = new EnvironmentSpawner.SpawnZone();
-        spawnZone.position = obj.transform.position;
-        spawnZone.size = obj.transform.localScale;      // TODO: add depth
-        spawnZone.rotation = obj.transform.rotation;
-        EnvironmentSpawner.Instance.SpawnEnvironment(environmentType, spawnZone);
+
+        EnvironmentSpawner.Instance.SpawnEnvironment(environmentType, obj.transform);
     }
 }
